@@ -22,6 +22,14 @@ body {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
 h1, h2 {
   font-family: Garamond, serif;
   font-weight: lighter;
@@ -39,15 +47,15 @@ h2 {
 }
 
 header, footer {
+  background-color: #000;
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 1;
 }
 
 nav {
-  background-color: #000;
   padding: 0.5rem;
-  grid-column: 1 / -1;
+  grid-column: 2;
   grid-row: 1;
 }
 
@@ -61,7 +69,6 @@ nav {
 }
 
 nav ul li {
-  list-style: none;
   display: inline;
 }
 
@@ -78,6 +85,16 @@ nav ul li a {
   border-radius: 50%;
   border: 2px solid #a6114a;
   background-color: #a6114a;
+}
+
+.bottle {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #a6114a;
+  background-color: #e3e3e3;
 }
 
 .specific-categories ul li img {
@@ -104,10 +121,56 @@ article, section {
   padding: 1rem;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card li {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card li h3 {
+  color: #a6114a;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.card li p {
+  color: #a6114a;
+  font-family: Garamond, serif;
+  align-self: flex-start;
+  margin: 4px 0;
+}
+
+.curiosities {
+  background-color: #a6114a;
+}
+
+.curiosities h2 {
+  font-family:'Nunito Sans', sans-serif;
+  color: #fff1c9;
+}
+
+.curiosities ul li {
+  margin: 1rem 0;
+  padding: 1rem;
+  color: #fff1c9;
+  border: 1px solid #fff1c9;
+  border-radius: 5px;
+}
+
 @media only screen and (min-width: 20em) {
 
-  body {
-    /* background-color: red; */
+  .broad-categories ul, .specific-categories ul {
+    flex-direction: row;
   }
 
 }
