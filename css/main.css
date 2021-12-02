@@ -1,13 +1,101 @@
 html {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Yantramanav', sans-serif; */
+
 img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
+}
+
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: Garamond, serif;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #a6114a;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #a6114a;
+  text-transform: uppercase;
+}
+
+header, footer {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+}
+
+nav {
+  background-color: #000;
+  padding: 0.5rem;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.logo {
+  padding: 0.5rem;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #a6114a;
+  background-color: #fff1c9;
+
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff1c9;
+  background-color: #ffaeb0;
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  color: #ffaeb0;
+  background-color: #fff1c9;
+}
+
+@media only screen and (min-width: 20em) {
+
+
+
 }
