@@ -13,7 +13,7 @@ font-family: 'Yantramanav', sans-serif; */
 
 img {
   display: block;
-  /* width: 100%; */
+  width: 100%;
 }
 
 body {
@@ -28,7 +28,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #a6114a;
 }
 
@@ -52,6 +52,8 @@ nav {
 }
 
 .logo {
+  width: 50px;
+  height: 70px;
   padding: 0.5rem;
   grid-column: 1;
   grid-row: 1;
@@ -75,8 +77,12 @@ nav ul li a {
   height: 100px;
   border-radius: 50%;
   border: 2px solid #a6114a;
-  background-color: #fff1c9;
+  background-color: #a6114a;
+}
 
+.specific-categories ul li img {
+  padding: 0.5rem;
+  border: 2px solid #fff1c9;
 }
 
 .button {
@@ -94,8 +100,14 @@ nav ul li a {
   background-color: #fff1c9;
 }
 
+article, section {
+  padding: 1rem;
+}
+
 @media only screen and (min-width: 20em) {
 
-
+  body {
+    /* background-color: red; */
+  }
 
 }
