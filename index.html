@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Home</title>
+  <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon-196.png">
   <link href="css/main.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,10 +12,19 @@
 </head>
 
 <body>
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#types-of-wines">Jump to Types of Wines</a></li>
+    <li><a href="#broad-categories">Jump to Broad Categories</a></li>
+    <li><a href="#specific-categories">Jump to Specific Categories</a></li>
+    <li><a href="#Curiosities">Jump to Curiosities</a></li>
+  </ul>
+
+  <header role="banner">
     <img class="logo" src="images/logo-colour-64.svg" alt="wine glass with a decorative pepper logo">
 
-    <nav role="navigation">
+    <nav id="nav" role="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="wine.html">Wine</a></li>
@@ -22,20 +33,21 @@
     </nav>
   </header>
 
-  <article role="banner">
+  <main id="main" role="main">
+  <section class="intro">
     <h1>Here comes the true: wine is not supposed to be simple</h1>
     <p>But don’t panic! It does not mean that we cannot get a way on that. The complexity of flavours inside each bottle of wine is actually what makes it so incredible and unique. All over the world, we have people really passionated about wine and its harmonization with food. This passion is moved by the infinite possibilities of compositions that are to be done, like chords of a beautiful symphony.
       Spicy Wine will help you to go straight to the right road on this field, sparing you from long readings about terroir in lands far away from fun. The intention here is present techniques and just the necessary information for simple — but delicious — harmonizations. Also, here you will find uncomplicated content about the wine itself and a whole section dedicated to food.
       Don’t forget to load yourself with a glass of merlot before dive into this reading. Enjoy it!</p>
       <img class="banner" src="images/banner.jpg" alt="Photography of a table with fruits, wine, and a glass spilling wine">
+  </section>
 
-    </article>
 
-    <section class="types-of-wines">
+    <section id="types-of-wines">
       <h2>Types of Wines</h2>
       <p>Wines are divided in three broad categories, being white, rosé and red.</p>
 
-      <div class="broad-categories">
+      <div id="broad-categories">
         <ul class="card">
           <li>
             <img class="icon" src="images/white-wine.jpg" alt="White wine texture">
@@ -62,87 +74,89 @@
 
       <p>Narrowing down these classifications, we have some more types that appear with their particularities, such as harmonization, notes, ideal temperature, and appropriated glass.</p>
 
-      <div class="specific-categories">
+      <div id="specific-categories" class="specific-categories">
         <ul class="card">
 
           <li>
             <img class="icon" src="images/sparkling-glass.svg" alt="Sparkling glass icon">
             <h3>Sparkling Wine</h3>
-              <p>Flavour intensity: Delicate (1)</p>
-              <p>Notes / Body: fruity, fresh, creamy.</p>
-              <p>Serving temperature: 8°-10°C</p>
-              <p>Harmonization: caviar, greek salad, citric desserts.</p>
+            <p>Flavour intensity: Delicate (1)</p>
+            <p>Notes / Body: fruity, fresh, creamy.</p>
+            <p>Serving temperature: 8°-10°C</p>
+            <p>Harmonization: caviar, greek salad, citric desserts.</p>
           </li>
 
           <li>
             <img class="icon" src="images/white-glass.svg" alt="White glass icon">
             <h3>White Wine</h3>
-              <p>Flavour intensity: Mild (2)</p>
-              <p>Notes / Body: fruity, citric, floral, light.</p>
-              <p>Serving temperature: 10°-12°C</p>
-              <p>Harmonization: grilled chicken, aioli pasta, tuna salad.</p>
-            </li>
+            <p>Flavour intensity: Mild (2)</p>
+            <p>Notes / Body: fruity, citric, floral, light.</p>
+            <p>Serving temperature: 10°-12°C</p>
+            <p>Harmonization: grilled chicken, aioli pasta, tuna salad.</p>
+          </li>
 
-            <li>
-              <img class="icon" src="images/rose-glass.svg" alt="Rosé glass icon">
-              <h3>Rosé Wine</h3>
-                <p>Flavour intensity: Medium (3)</p>
-                <p>Notes / Body: floral, light dry.</p>
-                <p>Serving temperature: 10°-14°C</p>
-                <p>Harmonization: shrimps, lobster thermidor.</p>
-              </li>
+          <li>
+            <img class="icon" src="images/rose-glass.svg" alt="Rosé glass icon">
+            <h3>Rosé Wine</h3>
+            <p>Flavour intensity: Medium (3)</p>
+            <p>Notes / Body: floral, light dry.</p>
+            <p>Serving temperature: 10°-14°C</p>
+            <p>Harmonization: shrimps, lobster thermidor.</p>
+          </li>
 
-              <li>
-                <img class="icon" src="images/red-glass.svg" alt="Red glass icon">
-                <h3>Red Wine</h3>
-                    <p>Flavour intensity: Complex (4)</p>
-                    <p>Notes / Body: woody, nutty, full bodied</p>
-                    <p>Serving temperature: 14°-18°C</p>
-                    <p>Harmonization: roasted meet, coq au vin.</p>
-                </li>
+          <li>
+            <img class="icon" src="images/red-glass.svg" alt="Red glass icon">
+            <h3>Red Wine</h3>
+            <p>Flavour intensity: Complex (4)</p>
+            <p>Notes / Body: woody, nutty, full bodied</p>
+            <p>Serving temperature: 14°-18°C</p>
+            <p>Harmonization: roasted meet, coq au vin.</p>
+          </li>
 
-                <li>
-                  <img class="icon" src="images/dessert-glass.svg" alt="Dessert glass icon">
-                  <h3>Dessert Wine</h3>
-                      <p>Flavour intensity: Sweet (5)</p>
-                      <p>Notes / Body: perfumed, dense, alcoholic</p>
-                      <p>Serving temperature: 14°-18°C</p>
-                      <p>Harmonization: chocolat, creamy desserts.</p>
-                  </li>
+          <li>
+            <img class="icon" src="images/dessert-glass.svg" alt="Dessert glass icon">
+            <h3>Dessert Wine</h3>
+            <p>Flavour intensity: Sweet (5)</p>
+            <p>Notes / Body: perfumed, dense, alcoholic</p>
+            <p>Serving temperature: 14°-18°C</p>
+            <p>Harmonization: chocolat, creamy desserts.</p>
+          </li>
 
-                </ul>
-              </div>
+        </ul>
+      </div>
 
-            </section>
+    </section>
 
-            <section class="curiosities">
+    <section id="curiosities" class="curiosities">
 
-              <h2>Curiosities</h2>
+      <h2>Curiosities</h2>
 
-              <ul>
-                <li>Champagne and sparkling wine are not synonymous. Any Champagne is, in fact, a sparkling wine, but it receives this denomination only when is produced in Champagne — a French territory. It needs to follows a specific production method and uses local grapes to be considered one.
-                </li>
-                <li>Not any red wine can be harmonized with cheese. The pigment of the red wine comes from the tannins, a substance present in the red grape skin. Usually, tannins are not a good match for fat, which is abundant on the majority of hard cheeses.
-                </li>
-                <li>The green wine is actually classified as white wine and not a separated category, like some people believe. Its differentiation is in the fact that it’s made out of grapes which didn’t reach the complete maturation yet.
-                </li>
-              </ul>
+      <ul>
+        <li>Champagne and sparkling wine are not synonymous. Any Champagne is, in fact, a sparkling wine, but it receives this denomination only when is produced in Champagne — a French territory. It needs to follows a specific production method and uses local grapes to be considered one.
+        </li>
+        <li>Not any red wine can be harmonized with cheese. The pigment of the red wine comes from the tannins, a substance present in the red grape skin. Usually, tannins are not a good match for fat, which is abundant on the majority of hard cheeses.
+        </li>
+        <li>The green wine is actually classified as white wine and not a separated category, like some people believe. Its differentiation is in the fact that it’s made out of grapes which didn’t reach the complete maturation yet.
+        </li>
+      </ul>
 
-              <img src="images/woman-tasting-wine.jpg" alt="Photography of a woman tasting two wines">
+      <img src="images/woman-tasting-wine.jpg" alt="Photography of a woman tasting two wines">
 
-            </section>
+    </section>
 
-            <footer>
-              <img class="logo" src="images/logo-colour-64.svg" alt="wine glass with a decorative pepper logo">
+    </main>
 
-              <nav role="navigation">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="wine.html">Wine</a></li>
-                  <li><a href="food.html">Food</a></li>
-                </ul>
-              </nav>
-            </footer>
+    <footer role="contentinfo">
+      <img class="logo" src="images/logo-colour-64.svg" alt="wine glass with a decorative pepper logo">
 
-          </body>
-          </html>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="wine.html">Wine</a></li>
+          <li><a href="food.html">Food</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </body>
+  </html>

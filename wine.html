@@ -3,17 +3,31 @@
 <head>
   <meta charset="utf-8">
   <title>Wine</title>
+  <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon-196.png">
   <link href="css/main.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,700;1,300&family=Yantramanav:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,700;1,300&family=Yantramanav:wght@900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#barbera">Jump to Barbera</a></li>
+    <li><a href="#zinfandel">Jump to Zinfandel</a></li>
+    <li><a href="#cinsault">Jump to Cinsault</a></li>
+    <li><a href="#cava">Jump to Cava</a></li>
+    <li><a href="#nerello-mascalese">Jump to Nerello Mascalese</a></li>
+    <li><a href="#rose-port">Jump to Rosé Port</a></li>
+    <li><a href="#harmonization-types">Jump to Harmonization Types</a></li>
+  </ul>
+
+  <header role="banner">
     <img class="logo" src="images/logo-colour-64.svg" alt="wine glass with a decorative pepper logo">
 
-    <nav role="navigation">
+    <nav id="nav" role="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="wine.html">Wine</a></li>
@@ -22,76 +36,77 @@
     </nav>
   </header>
 
+<main id="main" role="main">
   <section class="harmonization-options">
     <h1>Easy Ways to Go</h1>
     <p>To know what to write on the supermarket list for a cool dinner, you need to start somewhere. These are some error-proof combinations to receive your guests and put everybody in a good mood.</p>
 
-      <ul>
-        <div class="harmonization-card" id="barbera">
-          <li>
-            <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
-            <h3>Pasta Puttanesca + Barbera</h3>
-            <p>The wine’s acidity is a perfect match for the acidic tomatoes in this pasta. Also, the salty pantry staples in the Pasta Puttanesca will balance the wine’s high acidity. Barbera’s tart cherry and dried herb flavours will support this deliciously simple pasta perfect for any night of the week.</p>
-            <a class="button" href="food.html#pasta-puttanesca">Recipe</a>
+    <ul>
+      <div class="harmonization-card" id="barbera">
+        <li>
+          <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
+          <h3>Pasta Puttanesca + Barbera</h3>
+          <p>The wine’s acidity is a perfect match for the acidic tomatoes in this pasta. Also, the salty pantry staples in the Pasta Puttanesca will balance the wine’s high acidity. Barbera’s tart cherry and dried herb flavours will support this deliciously simple pasta perfect for any night of the week.</p>
+          <a class="button" href="food.html#pasta-puttanesca">Recipe</a>
 
-          </li>
-        </div>
+        </li>
+      </div>
 
-        <div class="harmonization-card" id="zinfandel">
-          <li>
-            <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
-            <h3>Southwest Sweet Potatoes + Zinfandel</h3>
-            <p>Zinfandel has just enough tannins and body to pair with the rich sweet potato without overpowering the dish. The wine’s jammy flavours will complement the sweetness of the potato, and the smoky aroma will match the stuffing’s southwestern spices.</p>
-            <a class="button" href="food.html#southwest-sweet-potatoes">Recipe</a>
+      <div class="harmonization-card" id="zinfandel">
+        <li>
+          <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
+          <h3>Southwest Sweet Potatoes + Zinfandel</h3>
+          <p>Zinfandel has just enough tannins and body to pair with the rich sweet potato without overpowering the dish. The wine’s jammy flavours will complement the sweetness of the potato, and the smoky aroma will match the stuffing’s southwestern spices.</p>
+          <a class="button" href="food.html#southwest-sweet-potatoes">Recipe</a>
 
-          </li>
-        </div>
+        </li>
+      </div>
 
-        <div class="harmonization-card" id="cinsault">
-          <li>
-            <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
-            <h3>Garlic Herb White Bean Soup + Cinsault</h3>
-            <p>The fruit notes in Cinsault are a nice balance to the soup’s garlicky flavours while the florals complement the soup’s dried herbs. The light body and tannin of Cinsault are perfect for the simple flavours of the white bean soup.</p>
-            <a class="button" href="food.html#garlic-herb-white-bean-soup">Recipe</a>
+      <div class="harmonization-card" id="cinsault">
+        <li>
+          <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
+          <h3>Garlic Herb White Bean Soup + Cinsault</h3>
+          <p>The fruit notes in Cinsault are a nice balance to the soup’s garlicky flavours while the florals complement the soup’s dried herbs. The light body and tannin of Cinsault are perfect for the simple flavours of the white bean soup.</p>
+          <a class="button" href="food.html#garlic-herb-white-bean-soup">Recipe</a>
 
-          </li>
-        </div>
+        </li>
+      </div>
 
-        <div class="harmonization-card" id="cava">
-          <li>
-            <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
-            <h3>Tortilla Española + Cava</h3>
-            <p>The savoury nature of the dish highlights the quince, apple, and citrus flavours of the Cava. If possible, reach for a Cava Reserva, which spends a minimum of 15 months on the lees, offering more texture and added complexity.</p>
-            <a class="button" href="food.html#tortilla-espanola">Recipe</a>
+      <div class="harmonization-card" id="cava">
+        <li>
+          <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
+          <h3>Tortilla Española + Cava</h3>
+          <p>The savoury nature of the dish highlights the quince, apple, and citrus flavours of the Cava. If possible, reach for a Cava Reserva, which spends a minimum of 15 months on the lees, offering more texture and added complexity.</p>
+          <a class="button" href="food.html#tortilla-espanola">Recipe</a>
 
-          </li>
-        </div>
+        </li>
+      </div>
 
-        <div class="harmonization-card" id="nerello-mascalese">
-          <li>
-            <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
-            <h3>Shakshuka + Nerello Mascalese</h3>
-            <p>The wine’s acidity is high enough to meet the acidity of the tomato sauce. Plus, the low tannins and light body will not overpower the lightness of an egg-based dish.</p>
-            <a class="button" href="food.html#shakshuka">Recipe</a>
+      <div class="harmonization-card" id="nerello-mascalese">
+        <li>
+          <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
+          <h3>Shakshuka + Nerello Mascalese</h3>
+          <p>The wine’s acidity is high enough to meet the acidity of the tomato sauce. Plus, the low tannins and light body will not overpower the lightness of an egg-based dish.</p>
+          <a class="button" href="food.html#shakshuka">Recipe</a>
 
-          </li>
-        </div>
+        </li>
+      </div>
 
-        <div class="harmonization-card" id="rose-port">
-          <li>
-            <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
-            <h3>Grilled PB&J + Rosé Port</h3>
-            <p>The strawberry, raspberry, and caramel flavours of a Rosé Port perfectly complement a PB&J sandwich’s flavours. Plus, the Port’s fruit notes enliven strawberry or raspberry jam, while the wine’s caramel aromas work well with the salty peanut butter. A Rosé Port also offers enough sweetness to match the PB&J.</p>
-            <a class="button" href="food.html#grilled-pb&g">Recipe</a>
+      <div class="harmonization-card" id="rose-port">
+        <li>
+          <img class="bottle" src="images/wine-bottle.svg" alt="Bottle of wine icon">
+          <h3>Grilled PB&J + Rosé Port</h3>
+          <p>The strawberry, raspberry, and caramel flavours of a Rosé Port perfectly complement a PB&J sandwich’s flavours. Plus, the Port’s fruit notes enliven strawberry or raspberry jam, while the wine’s caramel aromas work well with the salty peanut butter. A Rosé Port also offers enough sweetness to match the PB&J.</p>
+          <a class="button" href="food.html#grilled-pb&g">Recipe</a>
 
-          </li>
-        </div>
+        </li>
+      </div>
 
-      </ul>
+    </ul>
 
   </section>
 
-  <section class="harmonization-types">
+  <section id="harmonization-types" class="harmonization-types">
     <p>If you already passed the first step and want to dare a little more, here are some tips to pick your own paring.</p>
     <ul>
       <li>
@@ -111,11 +126,11 @@
 
     </ul>
   </section>
-
-  <footer>
+</main>
+  <footer role="contentinfo">
     <img class="logo" src="images/logo-colour-64.svg" alt="wine glass with a decorative pepper logo">
 
-    <nav role="navigation">
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="wine.html">Wine</a></li>

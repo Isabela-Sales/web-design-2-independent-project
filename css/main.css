@@ -11,6 +11,15 @@ html {
 /* font-family: 'Nunito Sans', sans-serif;
 font-family: 'Yantramanav', sans-serif; */
 
+.skip-links a {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
 img {
   display: block;
   width: 100%;
@@ -83,12 +92,12 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-article {
+.intro {
   display: grid;
   grid-template-rows: 2;
 }
 
-article h1 {
+.intro h1 {
   padding: 0 1rem;
   grid-column: 1;
   grid-row: 1;
@@ -96,9 +105,10 @@ article h1 {
   align-self: flex-end;
 }
 
-article img {
+.intro img {
   grid-column: 1;
   grid-row: 1;
+  padding: 0;
   mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
 }
 
@@ -141,7 +151,7 @@ article img {
   background-color: #fff1c9;
 }
 
-article, section {
+.intro, section {
   padding: 1rem;
 }
 
@@ -304,11 +314,11 @@ article, section {
 
 @media only screen and (min-width: 63em) {
 
-  article img {
+  .intro img {
     max-height: 40rem;
   }
 
-  article h1 {
+  .intro h1 {
     align-self: center;
     font-size: 4rem;
   }
