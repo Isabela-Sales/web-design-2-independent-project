@@ -14,6 +14,7 @@ font-family: 'Yantramanav', sans-serif; */
 img {
   display: block;
   width: 100%;
+  height: inherit;
   border-radius: 5px;
 }
 
@@ -88,6 +89,7 @@ article {
 }
 
 article h1 {
+  padding: 0 1rem;
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
@@ -240,6 +242,10 @@ article, section {
 
 @media only screen and (min-width: 40em) {
 
+  h1 {
+    font-size: 3rem;
+  }
+
   .curiosities {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -298,6 +304,15 @@ article, section {
 
 @media only screen and (min-width: 63em) {
 
+  article img {
+    max-height: 40rem;
+  }
+
+  article h1 {
+    align-self: center;
+    font-size: 4rem;
+  }
+
   .curiosities {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -324,6 +339,39 @@ article, section {
     grid-column: 2;
     grid-row: 2;
     align-items: flex-end;
+  }
+
+  .recipe ul div li{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr .75fr;
+    grid-template-rows: 1;
+  }
+
+  .recipe ul div li h2{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  .ingredients {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .preparation {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .recipe ul div li img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .recipe ul div li a {
+    grid-column: 4;
+    grid-row: 1;
+    align-self: center;
   }
 
 }
