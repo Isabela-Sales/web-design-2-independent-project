@@ -162,29 +162,29 @@ article, section {
   box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.card li h3 {
+.card li h3, .harmonization-card li h3 {
   color: #a6114a;
   text-transform: uppercase;
   font-weight: lighter;
 }
 
-.card li p {
+.card li p, .harmonization-card li p {
   color: #a6114a;
   font-family: Garamond, serif;
   align-self: flex-start;
   margin: 4px 0;
 }
 
-.curiosities {
+.curiosities, .harmonization-types {
   background-color: #a6114a;
 }
 
-.curiosities h2 {
+.curiosities h2, .harmonization-types p {
   font-family:'Nunito Sans', sans-serif;
   color: #fff1c9;
 }
 
-.curiosities ul li {
+.curiosities ul li, .harmonization-types li {
   margin: 1rem 0;
   padding: 1rem;
   color: #fff1c9;
@@ -202,6 +202,16 @@ article, section {
 .harmonization-card {
   min-width: none;
   width: 100%;
+}
+
+.harmonization-card li p {
+  margin-bottom: 1.5rem;
+}
+
+.harmonization-card li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (min-width: 40em) {
