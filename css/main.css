@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   line-height: 1.5;
 }
 
@@ -11,13 +11,29 @@ html {
 /* font-family: 'Nunito Sans', sans-serif;
 font-family: 'Yantramanav', sans-serif; */
 
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .skip-links a {
   position: absolute;
-  top: -3em;
+  top: -5em;
+  background-color: rgba(255, 255, 255, .9);
+  color: #000;
+  padding: 1.5rem .75rem 1.5rem 3rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .skip-links a:focus {
   top: 0;
+  outline: 3px solid #a6114a;
+}
+
+a:focus {
+  outline: 3px solid #a6114a;
 }
 
 img {
@@ -62,11 +78,11 @@ header, footer {
   background-color: #000;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1;
+  grid-template-rows: 1fr;
 }
 
 nav {
-  padding: 0.5rem 1rem 0.5rem;
+  padding: .5rem 1rem;
   grid-column: 2;
   grid-row: 1;
 }
@@ -74,7 +90,7 @@ nav {
 .logo {
   width: 50px;
   height: 70px;
-  padding: 0.5rem;
+  padding: .5rem;
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
@@ -90,11 +106,18 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  padding: .5rem;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 5px;
+  padding: .5rem;
 }
 
 .intro {
   display: grid;
-  grid-template-rows: 2;
+  grid-template-rows: 2fr;
 }
 
 .intro h1 {
@@ -109,7 +132,7 @@ nav ul li a {
   grid-column: 1;
   grid-row: 1;
   padding: 0;
-  mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .65) 100%);
 }
 
 .icon {
@@ -125,28 +148,28 @@ nav ul li a {
   display: block;
   width: 100px;
   height: 100px;
-  padding: 0.5rem;
+  padding: .5rem;
   border-radius: 50%;
   border: 2px solid #a6114a;
   background-color: #e3e3e3;
 }
 
 .specific-categories ul li img {
-  padding: 0.5rem;
+  padding: .5rem;
   border: 2px solid #fff1c9;
 }
 
-.button {
+.button, .button-1 {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff1c9;
   background-color: #ffaeb0;
   padding: 5px 15px;
   border-radius: 5px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px rgba(0, 0, 0, .1);
 }
 
-.button:hover {
+.button:hover, .button-1:hover {
   color: #ffaeb0;
   background-color: #fff1c9;
 }
@@ -162,7 +185,7 @@ nav ul li a {
   gap: 1.5rem;
 }
 
-.card li, .harmonization-card, .recipe ul div  {
+.card li, .harmonization-card, .recipe ul div {
   padding: 1rem;
   width: 20rem;
   min-width: 20rem;
@@ -171,7 +194,7 @@ nav ul li a {
   align-items: center;
   background-color: #e3e3e3;
   border-radius: 5px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px rgba(0, 0, 0, .2);
 }
 
 .card li h3, .harmonization-card li h3 {
@@ -192,7 +215,7 @@ nav ul li a {
 }
 
 .curiosities h2, .harmonization-types p {
-  font-family:'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #fff1c9;
 }
 
@@ -212,7 +235,6 @@ nav ul li a {
 }
 
 .harmonization-card, .recipe ul div {
-  min-width: none;
   width: 100%;
 }
 
@@ -233,17 +255,17 @@ nav ul li a {
 
 .recipe ul div li {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 4;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
 }
 
-.recipe ul div li img {
+.recipe-img {
   grid-column: 1;
   grid-row: 1;
-  mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .65) 100%);
 }
 
-.recipe ul div li h2 {
+.recipe-name {
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
@@ -259,11 +281,11 @@ nav ul li a {
   .curiosities {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2;
+    grid-template-rows: 2fr;
     gap: 1.5rem;
   }
 
-  .curiosities h2{
+  .curiosities h2 {
     grid-column: 1 / -1;
     grid-row: 1;
     margin-bottom: 0;
@@ -287,7 +309,7 @@ nav ul li a {
   .harmonization-card li {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 2;
+    grid-template-rows: 2fr;
     align-items: flex-end;
   }
 
@@ -308,8 +330,6 @@ nav ul li a {
     grid-column: 3;
   }
 
-
-
 }
 
 @media only screen and (min-width: 63em) {
@@ -326,11 +346,11 @@ nav ul li a {
   .curiosities {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 2;
+    grid-template-rows: 2fr;
     gap: 1.5rem;
   }
 
-  .curiosities h2{
+  .curiosities h2 {
     grid-column: 1 / -1;
     grid-row: 1;
     margin-bottom: 0;
@@ -351,13 +371,13 @@ nav ul li a {
     align-items: flex-end;
   }
 
-  .recipe ul div li{
+  .recipe ul div li {
     display: grid;
     grid-template-columns: 2fr 2fr 3fr .75fr;
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
   }
 
-  .recipe ul div li h2{
+  .recipe-name {
     grid-column: 1;
     grid-row: 1;
     align-self: center;
@@ -373,12 +393,12 @@ nav ul li a {
     grid-row: 1;
   }
 
-  .recipe ul div li img {
+  .recipe-img {
     grid-column: 1;
     grid-row: 1;
   }
 
-  .recipe ul div li a {
+  .button-1 {
     grid-column: 4;
     grid-row: 1;
     align-self: center;
