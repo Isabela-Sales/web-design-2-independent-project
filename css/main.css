@@ -132,7 +132,6 @@ nav ul li a:hover {
   grid-column: 1;
   grid-row: 1;
   padding: 0;
-  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .65) 100%);
 }
 
 .icon {
@@ -185,7 +184,7 @@ nav ul li a:hover {
   gap: 1.5rem;
 }
 
-.card li, .harmonization-card, .recipe ul div {
+.card li, .harmonization-card, .recipe>ul>div {
   padding: 1rem;
   width: 20rem;
   min-width: 20rem;
@@ -257,19 +256,37 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr;
+  gap: 1rem;
 }
 
 .recipe-img {
   grid-column: 1;
   grid-row: 1;
-  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .65) 100%);
 }
 
 .recipe-name {
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
-  align-self: flex-end;
+  text-align: center;
+  align-self: flex-start;
+  background-color: rgba(255, 241, 201, .75);
+}
+
+.ingredients, .preparation {
+  background-color: #fff1c9;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.ingredients dt{
+  text-transform: uppercase;
+}
+
+.button-1 {
+  align-self: flex-start;
+  text-align: center;
+  max-width: 10rem;
 }
 
 @media only screen and (min-width: 40em) {
@@ -309,8 +326,9 @@ nav ul li a:hover {
   .harmonization-card li {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 2fr;
-    align-items: flex-end;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
   }
 
   .harmonization-card li img {
@@ -328,14 +346,21 @@ nav ul li a:hover {
 
   .harmonization-card li a {
     grid-column: 3;
+    text-align: center;
+    width: 10rem;
+  }
+
+  .recipe-name {
+    font-size: 2.5rem;
   }
 
 }
 
 @media only screen and (min-width: 63em) {
 
-  .intro img {
-    max-height: 40rem;
+  main {
+    padding: 0 10rem;
+    align-content: center;
   }
 
   .intro h1 {
@@ -373,24 +398,25 @@ nav ul li a:hover {
 
   .recipe ul div li {
     display: grid;
-    grid-template-columns: 2fr 2fr 3fr .75fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 1fr;
+    gap: 1rem;
   }
 
   .recipe-name {
     grid-column: 1;
     grid-row: 1;
-    align-self: center;
+    font-size: 1.5rem;
   }
 
   .ingredients {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1 / -1;
   }
 
   .preparation {
     grid-column: 3;
-    grid-row: 1;
+    grid-row: 1 / -1;
   }
 
   .recipe-img {
@@ -399,9 +425,11 @@ nav ul li a:hover {
   }
 
   .button-1 {
-    grid-column: 4;
-    grid-row: 1;
-    align-self: center;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: flex-start;
+    text-align: center;
+    max-width: 10rem;
   }
 
 }
