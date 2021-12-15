@@ -233,6 +233,14 @@ nav ul li a:hover {
   color: #ffaeb0;
 }
 
+cite a {
+  color: #000;
+}
+
+cite a:hover {
+  color: #a6114a;
+}
+
 .harmonization-card, .recipe ul div {
   width: 100%;
 }
