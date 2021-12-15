@@ -74,7 +74,7 @@ h2 {
   text-transform: uppercase;
 }
 
-section>p {
+section > p {
   font-size: 1.25rem;
 }
 
@@ -92,7 +92,7 @@ nav {
 }
 
 .logo {
-  width: 50px;
+  width: 160px;
   height: 70px;
   padding: .5rem;
   grid-column: 1;
@@ -188,7 +188,7 @@ nav ul li a:hover {
   gap: 1.5rem;
 }
 
-.card li, .harmonization-card, .recipe>ul>div {
+.card li, .harmonization-card, .recipe > ul > div {
   padding: 1rem;
   width: 20rem;
   min-width: 20rem;
@@ -229,6 +229,17 @@ nav ul li a:hover {
   color: #fff1c9;
   border: 1px solid #fff1c9;
   border-radius: 5px;
+}
+
+.curiosities ul li a {
+  color: #fff1c9;
+  text-decoration: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.curiosities ul li a:hover {
+  color: #ffaeb0;
 }
 
 .harmonization-options ul {
@@ -284,7 +295,7 @@ nav ul li a:hover {
   padding: 1rem;
 }
 
-.ingredients dt{
+.ingredients dt {
   text-transform: uppercase;
 }
 
@@ -331,7 +342,7 @@ nav ul li a:hover {
   .harmonization-card li {
     display: grid;
     grid-template-columns: 110px 1fr 180px;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-rows: .1fr 1fr;
     align-items: center;
     gap: 2rem;
   }
