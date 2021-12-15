@@ -22,18 +22,18 @@ font-family: 'Yantramanav', sans-serif; */
   top: -5em;
   background-color: rgba(255, 255, 255, .9);
   color: #000;
-  padding: 1.5rem .75rem 1.5rem 3rem;
+  padding: 1.5rem .75rem 1.5rem 10rem;
   font-weight: bold;
   text-decoration: none;
 }
 
 .skip-links a:focus {
   top: 0;
-  outline: 3px solid #a6114a;
+  outline: 3px solid #ffaeb0;
 }
 
 a:focus {
-  outline: 3px solid #a6114a;
+  outline: 3px solid #ffaeb0;
 }
 
 img {
